@@ -23,7 +23,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
-    strudel = {
+    plugins-strudel = {
       url = "github:gruvw/strudel.nvim";
       flake = false; # <--- This tells Nix it's just a regular repo
     };
@@ -87,7 +87,7 @@
         strudel-nvim = prev.pkgs.buildNpmPackage {
           pname = "strudel-nvim";
           version = "git";
-          src = inputs.strudel;
+          src = inputs.plugins-strudel;
           
           # 1. Run `nix build`
           # 2. It will fail. Copy the hash from the error.

@@ -31,14 +31,7 @@
         "type": "github"
       }
     },
-    "root": {
-      "inputs": {
-        "nixCats": "nixCats",
-        "nixpkgs": "nixpkgs",
-        "strudel": "strudel"
-      }
-    },
-    "strudel": {
+    "plugins-strudel": {
       "flake": false,
       "locked": {
         "lastModified": 1765011385,
@@ -52,6 +45,13 @@
         "owner": "gruvw",
         "repo": "strudel.nvim",
         "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixCats": "nixCats",
+        "nixpkgs": "nixpkgs",
+        "plugins-strudel": "plugins-strudel"
       }
     }
   },

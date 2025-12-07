@@ -1,14 +1,16 @@
+-- lua/plugins.lua
 require("lz.n").loader({
-  {
-    "strudel-nvim", -- Use the name defined in the overlay (pname = "strudel-nvim")
-    
-    -- "cmd" allows it to load lazily on command
-    cmd = { "StrudelLaunch", "StrudelToggle" }, 
-    
-    config = function()
-      require("strudel").setup({
-        -- options here
-      })
-    end,
-  },
+  {
+    -- Use the canonical name
+    "strudel.nvim",
+    cmd = { "StrudelLaunch", "StrudelToggle" },
+    -- *** REMOVE THE BUILD STEP: Nix has already handled this! ***
+    -- build = "npm ci", 
+    config = function()
+      print("INFO: strudel.nvim config has been loaded.") 
+      require("strudel").setup({
+        -- options here
+      })
+    end,
+  },
 })
