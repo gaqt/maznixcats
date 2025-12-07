@@ -1,0 +1,60 @@
+{
+  "nodes": {
+    "nixCats": {
+      "locked": {
+        "lastModified": 1764009888,
+        "narHash": "sha256-hJekfTiW1792txgRSM4LcHnz1lDSY87LYbsJEn2V378=",
+        "owner": "BirdeeHub",
+        "repo": "nixCats-nvim",
+        "rev": "16ac3281f322ea15d39843829e42a44d22da3715",
+        "type": "github"
+      },
+      "original": {
+        "owner": "BirdeeHub",
+        "repo": "nixCats-nvim",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1764947035,
+        "narHash": "sha256-EYHSjVM4Ox4lvCXUMiKKs2vETUSL5mx+J2FfutM7T9w=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "a672be65651c80d3f592a89b3945466584a22069",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixCats": "nixCats",
+        "nixpkgs": "nixpkgs",
+        "strudel": "strudel"
+      }
+    },
+    "strudel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1765011385,
+        "narHash": "sha256-LhS41aKsYJpKqoF2S3ZzeDLYGBKA4iMN2o34k8YOWHs=",
+        "owner": "gruvw",
+        "repo": "strudel.nvim",
+        "rev": "a6b9752b0084a20c37786b54eef2095bb31daff7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gruvw",
+        "repo": "strudel.nvim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
