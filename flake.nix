@@ -25,7 +25,7 @@
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
     plugins-strudel = {
       url = "github:gruvw/strudel.nvim";
-      flake = false; # <--- This tells Nix it's just a regular repo
+      flake = false;
     };
 
 
