@@ -1,10 +1,9 @@
 -- lua/plugins.lua
-require("lz.n").loader({
+require("lz.n").load({
   {
     "strudel.nvim",
     cmd = { "StrudelLaunch", "StrudelToggle" },
-         build = "npm ci",
-    config = function()
+    after = function()
       print("INFO: strudel.nvim config has been loaded.")
       require("strudel").setup({
         browser_exec_path = string.sub(
